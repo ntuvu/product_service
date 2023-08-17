@@ -1,0 +1,16 @@
+server:
+  port: 8001
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/product
+    username: root
+    password: a
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # You can change this to "create" or "none" as needed
+    show-sql: true # Set this to false in production
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
